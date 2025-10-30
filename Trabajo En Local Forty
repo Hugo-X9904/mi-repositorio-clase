@@ -1,0 +1,247 @@
+# Trabajo En Local Forty
+
+## 
+
+## 1. Abrir carpeta Forty en Git e iniciarlo
+
+`cd forty`
+
+`git init`
+
+
+
+![](C:\Users\Hugo\Pictures\Screenshots\Captura de pantalla 2025-10-29 005025.png)
+
+## 2.Copiar archivos
+
+`dir`
+
+![](C:\Users\Hugo\Pictures\Screenshots\Captura de pantalla 2025-10-29 005742.png)
+
+## 3.Comprobar Status y hacer primer commit
+
+`git status`
+
+ `git add .`
+
+`
+
+![](C:\Users\Hugo\Pictures\Screenshots\Captura de pantalla 2025-10-29 010236.png)
+
+`git commit`
+
+![](C:\Users\Hugo\Pictures\Screenshots\Captura de pantalla 2025-10-29 010308.png)
+
+## 4 Renombrar rama master a main
+
+`git branch -M`
+
+``git branch`
+
+![](C:\Users\Hugo\Pictures\Screenshots\Captura de pantalla 2025-10-29 011218.png)
+
+``
+
+## 5. Crear archivo .gitignore
+
+`echo`
+
+``cat`
+
+![](C:\Users\Hugo\Pictures\Screenshots\Captura de pantalla 2025-10-29 011955.png)
+
+## 6. Eliminar archivos del tracking
+
+`git rm --cached`
+
+`git ls files`
+
+![](C:\Users\Hugo\Pictures\Screenshots\Captura de pantalla 2025-10-29 012945.png)
+
+
+
+`git add .gitignore`
+
+`git commit`
+
+![](C:\Users\Hugo\Pictures\Screenshots\Captura de pantalla 2025-10-29 012955.png)
+
+## 7. Verificar que funciona el .gitignore
+
+
+
+`touch`
+
+`git status`
+
+![](C:\Users\Hugo\Pictures\Screenshots\Captura de pantalla 2025-10-29 013645.png)
+
+## 8. Crear rama feature-content
+
+`git checkout -b feature-content`
+
+`git branch`
+
+![](C:\Users\Hugo\Pictures\Screenshots\Captura de pantalla 2025-10-29 014523.png)
+
+## 9. Modificar main.css
+
+![](C:\Users\Hugo\Pictures\Screenshots\Captura de pantalla 2025-10-29 015423.png)
+
+`git status`
+
+``git add assets/css/main.css`
+
+` git commit -m "Cambiar font-size a 1.5em en main.css"` 
+
+` git log --oneline --graph --all --decorate`
+
+![](C:\Users\Hugo\Pictures\Screenshots\Captura de pantalla 2025-10-29 015913.png)
+
+## 10. Eliminar passwords.txt
+
+`rm passwords.txt`
+
+![](C:\Users\Hugo\Pictures\Screenshots\Captura de pantalla 2025-10-29 020500.png)
+
+## 11. Crear about.html
+
+` cp generic.html about.html`
+
+` git add about.html`
+
+``git commit -m "Añadir página about.html basada en generic.html"`
+
+![](C:\Users\Hugo\Pictures\Screenshots\Captura de pantalla 2025-10-29 021054.png)
+
+## 12.Cambiar a main y examinar logs
+
+` git checkout main`
+
+` git log --oneline --graph --all --decorate`
+
+![](C:\Users\Hugo\Pictures\Screenshots\Captura de pantalla 2025-10-29 022316.png)
+
+## 13.Modificar generic.html hacer commit
+
+Cambiar  el spam `<spam>`
+
+![](C:\Users\Hugo\Pictures\Screenshots\Captura de pantalla 2025-10-29 022814.png)
+
+
+
+
+
+` git add generic.html`
+
+`git commit -m "Modificar contenido en generic.html"`
+
+`git log --oneline --graph --all --decorate`
+
+![](C:\Users\Hugo\Pictures\Screenshots\Captura de pantalla 2025-10-29 023240.png)
+
+
+
+## 14. Modificar elements.html sin commit
+
+![](C:\Users\Hugo\Pictures\Screenshots\Captura de pantalla 2025-10-29 115731.png)
+
+
+
+`git add elements.html`
+
+![](C:\Users\Hugo\Pictures\Screenshots\Captura de pantalla 2025-10-29 115909.png)
+
+## 15.Deshacer cambios en elements.html
+
+
+
+`git reset HEAD elements.html`
+
+` git checkout -- elements.html`
+
+` git status`
+
+![](C:\Users\Hugo\Pictures\Screenshots\Captura de pantalla 2025-10-29 120454.png)
+
+ 
+
+## 16. Mostrar diferencias entre ramas
+
+`git diff`
+
+
+
+![](C:\Users\Hugo\Pictures\Screenshots\Captura de pantalla 2025-10-29 121343.png)
+
+
+
+## 17. Fusionar feature-content con main
+
+`git merge feature-content`
+
+`git log --oneline --graph --all --decorate`
+
+
+
+![](C:\Users\Hugo\Pictures\Screenshots\Captura de pantalla 2025-10-29 141458.png)
+
+## 18. Crear rama hotfix  y corregir error
+
+`git checkout -b hotfix`
+
+`notepad index.html`
+
+![](C:\Users\Hugo\Pictures\Screenshots\Captura de pantalla 2025-10-29 180711.png)
+
+`<li><a href="about.html">About</a></li>`
+
+
+
+![](C:\Users\Hugo\Pictures\Screenshots\Captura de pantalla 2025-10-29 180101.png)
+
+
+
+`git commit -m`
+
+`git log --oneline -2`
+
+![](C:\Users\Hugo\Pictures\Screenshots\Captura de pantalla 2025-10-29 180846.png)
+
+## 19.Fusionar  hotfix con main
+
+
+
+`git checkout main`
+
+`git merge hotfix`
+
+`git log --oneline --graph --all --decorate`
+
+![](C:\Users\Hugo\Pictures\Screenshots\Captura de pantalla 2025-10-29 184810.png)
+
+## 20. Borrar rama hotfix
+
+`git branch -d hotfix`
+
+`git branch`
+
+
+
+![](C:\Users\Hugo\Pictures\Screenshots\Captura de pantalla 2025-10-29 185738.png)
+
+## 21. Mostrar últimos 3 commits
+
+`git log -3 --oneline`
+
+
+
+![](C:\Users\Hugo\Pictures\Screenshots\Captura de pantalla 2025-10-29 190023.png)
+
+## 22.Etiquetar commit actual
+
+`git tag v1.0`
+
+`git tag -1`
+
+![](C:\Users\Hugo\Pictures\Screenshots\Captura de pantalla 2025-10-29 190459.png)
