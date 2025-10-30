@@ -1,0 +1,79 @@
+# Repaso Linux capitulo 2
+
+## 1.
+
+en el directorio /etc.
+
+`/etc`
+
+![](C:\Users\Hugo\Pictures\Screenshots\Captura de pantalla 2025-10-30 141620.png)
+
+## 2.
+
+b) Nombre de usuario y contraseña
+
+
+
+
+
+## 3.
+
+`ls`
+
+
+
+![](C:\Users\Hugo\Pictures\Screenshots\Captura de pantalla 2025-10-30 141910.png)
+
+## 4.
+
+`ls ..`
+
+
+
+![](C:\Users\Hugo\Pictures\Screenshots\Captura de pantalla 2025-10-30 142231.png)
+
+## 5.
+
+cal mayo 1972 (sustituir en cada caso por el mes y año de nacimiento para ver un calendario de
+ese mes
+
+
+
+## 6.
+
+`ls/bin`
+
+![](C:\Users\Hugo\Pictures\Screenshots\Captura de pantalla 2025-10-30 142605.png)
+
+## 7.
+
+
+
+`ls /usr/bin
+ cd ..
+ cd ..
+ cd usr
+ cd bin
+ ls
+`
+
+` cd /usr/bin
+ ls`
+
+![](C:\Users\Hugo\Pictures\Screenshots\Captura de pantalla 2025-10-30 142949.png)
+
+## 8.
+
+`ls-R/etc`
+
+![](C:\Users\Hugo\Pictures\Screenshots\Captura de pantalla 2025-10-30 143148.png)
+
+## 9.
+
+`ls -S /usr/X11R6/bin`
+
+![](C:\Users\Hugo\Pictures\Screenshots\Captura de pantalla 2025-10-30 143424.png)
+
+## 10.
+
+`ls -Slh /etc`
